@@ -39,7 +39,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen about-pattern" >
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -55,7 +55,7 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className="mt-20 grid  grid-cols-2 sm:grid-cols-4 gap-10">
+      <div className="mt-20 grid  grid-cols-2 sm:grid-cols-4 gap-10 about-pattern" >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
