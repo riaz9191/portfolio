@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
+import { forward } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -16,6 +17,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -43,6 +45,18 @@ const ProjectCard = ({
                 src={github}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
+          <div className='absolute inset-0 flex justify-end items-end  m-3 card-img_hover'>
+            <div
+              onClick={() => window.open(live_link, "_blank")}
+              className='white-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={forward}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain text-white'
               />
             </div>
           </div>
@@ -85,7 +99,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
