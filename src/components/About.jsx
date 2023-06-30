@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import React from "react";
-import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -20,7 +20,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-[#171131] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img
           src={icon}
@@ -39,7 +39,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div className="h-screen about-pattern" >
+    <div className="" >
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -48,14 +48,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
+        I'm a skilled web developer with experience in React and
+        JavaScript, and expertise in frameworks like Express.js, Node.js. I'm a quick learner and collaborate closely with others to
         create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        real-world problems. Let's work together to bring ideas to life!
       </motion.p>
 
-      <div className="mt-20 grid  grid-cols-2 sm:grid-cols-4 gap-10 about-pattern" >
+      <div className="mt-20 grid  grid-cols-1 sm:grid-cols-4 gap-10 about-pattern" >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

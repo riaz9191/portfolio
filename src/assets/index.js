@@ -21,17 +21,30 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import firebase from "./tech/firebase.png";
+import bs from "./tech/bs.png"; 
+import express from "./tech/expressjs.png"; 
+import netly from "./tech/netly.png"; 
+import nodejss from "./tech/nodejss.png"; 
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import wooden from "./wooden.png";
+import banglar from "./banglar.png";
+import jobg from "./jobg.png";
 
 export {
+  wooden,
+  banglar,
+  jobg,
+  firebase,
+  bs,
+  netly,
+  nodejss,
+  express,
   logo,
   backend,
   creator,
@@ -58,7 +71,5 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  
 };
