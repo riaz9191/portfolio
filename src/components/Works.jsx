@@ -33,7 +33,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-[224px]  rounded-2xl'
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -92,7 +92,7 @@ const Works = () => {
 
       <div className='w-full flex'>
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("", "", 1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
          I have a collection of projects that effectively showcase my skills and experience through real-world examples of my work. Each project is concisely described and includes links to code repositories and live demos. These projects serve as a testament to my proficiency in solving intricate problems, adapting to various technologies, and successfully managing projects.

@@ -70,29 +70,22 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
+      name: "HTML5",
       icon: html,
     },
     {
-      name: "CSS 3",
+      name: "CSS3",
       icon: css,
     },
     {
       name: "JavaScript",
       icon: javascript,
     },
-    // {
-    //   name: "TypeScript",
-    //   icon: typescript,
-    // },
     {
       name: "React JS",
       icon: reactjs,
     },
-    // {
-    //   name: "Redux Toolkit",
-    //   icon: redux,
-    // },
+    
     {
       name: "Boostrap",
       icon: bs,
@@ -126,10 +119,6 @@ import {
       name: "Firebase",
       icon: firebase,
     },
-    // {
-    //   name: "Three JS",
-    //   icon: threejs,
-    // },
     {
       name: "git",
       icon: git,
@@ -141,6 +130,20 @@ import {
     // {
     //   name: "docker",
     //   icon: docker,
+    // },
+    
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
+    
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
     // },
   ];
   
@@ -159,6 +162,21 @@ import {
       ],
     },
     {
+      title: "Personal Projects",
+      company_name: "Own",
+      icon: shopify,
+      iconBg: "#383E56",
+      date: "Jan 2022 - Present",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Implementing responsive design.",
+        "Developed and executed personal projects demonstrating a strong passion for continuous learning and self-motivated exploration.",
+        
+        "Applied creative problem-solving skills to conceive and independently complete personal projects, showcasing initiative and resourcefulness.",
+        
+      ],
+    },
+    {
       title: "Coursework and Certifications",
       company_name: "Programming Hero ",
       icon: tesla,
@@ -172,27 +190,24 @@ import {
       ],
     },
     {
-      title: "Personal Projects",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Present",
+      title: "Web Developer",
+      company_name: "ALL IN ALL BD CORPORATION,",
+      icon: tesla,
+      iconBg: "#E6DEDD",
+      date: "August 2023 - January 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Implementing responsive design.",
-        "Developed and executed personal projects demonstrating a strong passion for continuous learning and self-motivated exploration.",
-        
-        "Applied creative problem-solving skills to conceive and independently complete personal projects, showcasing initiative and resourcefulness.",
-        
+        "Maintained and optimized company website for optimal user experience and implemented SEO strategies.",
+        "Developed and managed a WordPress e-commerce website for seamless online shopping.",
+        "Enhanced company branding through logo and graphics design initiatives.",
       ],
-    },
+    }
     
   ];
   
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "I thought it was impossible to make a website as beautiful as our product, but Riaz proved me wrong.",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
@@ -200,7 +215,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "I've never met a web developer who truly cares about their clients' success like Riaz does.",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
@@ -208,7 +223,7 @@ import {
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "After Riaz optimized our website, our traffic increased by 50%. We can't thank them enough!",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",
@@ -217,6 +232,28 @@ import {
   ];
   
   const projects = [
+    {
+      name: "ArtOne",
+      description:
+        "Full stack website with dashboard",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: wooden,
+      source_code_link: "https://github.com/riaz9191/artone-client-side",
+      live_link: "https://wooden-feb93.web.app/"
+    },
     {
       name: "Wooden",
       description:
